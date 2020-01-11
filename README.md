@@ -65,7 +65,7 @@ The above setup for Docker Desktop requires Chocolatey to be installed.  Please 
 
 In the general tab of settings, open port 2375 so WSL can access the Windows installation of Docker Desktop.  Please disregard the security message below the checkbox.  This is only a security issue if you were running Docker Desktop on a production server.
 
-![DockerPort2375](markdown-images/DockerPort2375.png)
+![DockerPort2375](DockerPort2375.png)
 
 ### Step 3.  Install Windows Subsystem for Linux (WSL) and Ubuntu 18.04.
 
@@ -85,7 +85,7 @@ Type "Ubuntu 18.04" into the Windows search field in the lower left hand corner 
 
 More detailed instructions on how to install Ubuntu 18.04 from the Microsoft Store, please follow this link: https://linuxconfig.org/how-to-install-ubuntu-18-04-on-windows-10
 
-### Step 4.  Clone WSL-DEV-SCRIPTS and run the install script.###
+### Step 4.  Clone WSL-DEV-SCRIPTS and run the install script. ###
 
 Go to whichever directory you use to keep git repos on your laptop.  Please clone the WSL-DEV-SCRIPTS git repository:
 

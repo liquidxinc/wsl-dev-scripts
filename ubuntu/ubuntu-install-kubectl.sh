@@ -33,6 +33,7 @@ chmod 700 get_helm.sh
 wget https://azuredraft.blob.core.windows.net/draft/draft-canary-linux-amd64.tar.gz
 tar -zxvf draft-canary-linux-amd64.tar.gz
 sudo mv linux-amd64/draft /usr/local/bin
+sudo rm -rf linux-amd64
 
 # See if Anchore CLI has already been setup in bashrc
 SEARCHLINE="alias k='kubectl'"

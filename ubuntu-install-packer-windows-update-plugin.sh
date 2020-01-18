@@ -23,9 +23,9 @@ wget -q "https://github.com/rgl/packer-provisioner-windows-update/releases/downl
 
 tar -xvzf packer-provisioner-windows-update-linux.tgz
 
-sudo mv packer-provisioner-windows-update /usr/local/bin/
+chmod +x /usr/local/bin/packer-provisioner-windows-update
 
-sudo chmod +x /usr/local/bin/packer-provisioner-windows-update
+sudo mv packer-provisioner-windows-update /usr/local/bin/
 
 cd ~
 
@@ -34,4 +34,4 @@ sudo rm ~/*.tgz*
 # Set back to original current directory
 cd "$CURRENT_DIR"
 
-echo -e "${GREEN}Packer Windows Update plug-in installation complete.${NC}\n"
+echo -e "\n${GREEN}Packer Windows Update plug-in installation complete.${NC}\n"

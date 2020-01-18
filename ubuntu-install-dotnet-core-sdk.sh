@@ -21,7 +21,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 sudo add-apt-repository universe -y
 sudo apt-get install apt-transport-https -y
 sudo apt-get update -y
-sudo apt-get install dotnet-sdk-3.0 -y
+sudo apt-get install dotnet-sdk-3.1 -y
 sudo apt-get install fsharp -y
 sudo apt-get update -y
 

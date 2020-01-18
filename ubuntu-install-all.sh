@@ -44,11 +44,17 @@ echo -e "\n${RED}Running the rest of the installations...${NC}\n"
 # Install awsli
 . ubuntu-install-awscli.sh
 
+# Install AWS IAM Authenticator
+. ubuntu-install-aws-iam-authenticator.sh
+
+# Install 
+
+
 # Install Docker
 . ubuntu-install-docker.sh
 
 # Install .NET Core 3.0 with FAKE command-line tooling
-. ubuntu-install-dotnet-core-sdk-3.0.sh
+. ubuntu-install-dotnet-core-sdk.sh
 
 # Install Azure core functions tools
 . ubuntu-install-azure-functions-core-tools.sh
@@ -95,8 +101,15 @@ echo -e "\n${RED}Running the rest of the installations...${NC}\n"
 # Install Powershell Modules
 sudo pwsh -File ubuntu-install-powershell-modules.sh
 
+# Install Python 3.8 and update-alternatives
+. ubuntu-install-python3.8-and-update-alternatives.sh
+
 # Install Python3 pip
 . ubuntu-install-python3-pip.sh
+
+# Install Anchore CLI
+# Must be installed after Python prep
+. ubuntu-install-anchore-cli.sh
 
 # Install Ruby and related tools
 . ubuntu-install-ruby.sh

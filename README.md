@@ -100,3 +100,7 @@ PS> ubuntu1804
 ```
 
 Once at the Ubuntu 18.04 command-line, run the  ***ubuntu-install-all.sh*** script to install all dependencies for WSL.  Please note that the script takes approximately 45 minutes to complete.
+
+## License
+
+Project is licensed under the [MIT License](LICENSE.md).  Please read [LICENSE.md](LICENSE.md) for all licensing details.

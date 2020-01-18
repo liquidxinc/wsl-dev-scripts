@@ -34,11 +34,23 @@ wget https://azuredraft.blob.core.windows.net/draft/draft-canary-linux-amd64.tar
 tar -zxvf draft-canary-linux-amd64.tar.gz
 sudo mv linux-amd64/draft /usr/local/bin
 
+# See if Anchore CLI has already been setup in bashrc
+SEARCHLINE="alias k='kubectl'"
+
+LINE0="alias k='kubectl'"
+
+#This works!  Leave as reference
+#export PROMPT_COMMAND='__git_ps1 "\e[93m\u@\h: \e[94m\w\e[m" " $ "'
+WRITEFILE="\n$LINE0"
+
+if ! grep -qF "$SEARCHLINE" ~/.bashrc
+then
+  echo -e "$WRITEFILE" >> ~/.bashrc
+fi
+
 cd ~
 
 rm *.*
-
-sudo apt install libcurl3 -y
 
 # Set back to original current directory
 cd "$CURRENT_DIR"

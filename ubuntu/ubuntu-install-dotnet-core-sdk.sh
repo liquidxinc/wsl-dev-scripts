@@ -7,7 +7,7 @@ GREEN='\033[0;32m'
 GRAY='\033[1;30m'
 NC='\033[0m' # No Color
 
-echo -e "\n${RED}Running installation of .NET Core SDK 3.0...${NC}\n"
+echo -e "\n${RED}Running installation of .NET Core SDK...${NC}\n"
 
 # Save current directory
 CURRENT_DIR=$(pwd)
@@ -25,19 +25,60 @@ sudo apt-get install dotnet-sdk-3.1 -y
 sudo apt-get install fsharp -y
 sudo apt-get update -y
 
+
+
+
+
+
+# Install AWS ECS Tools
+dotnet tool install -g Amazon.ECS.Tools
+
+# Install AWS Lambda Tools 
+dotnet tool install -g Amazon.Lambda.Tools
+
 # Install Coverlet
 dotnet tool install -g coverlet.console
+
+# Install DepGuard
+dotnet tool install -g depguard
 
 # Install FAKE CLI
 dotnet tool install -g fake-cli
 dotnet new -i "fake-template::*"
 
+# Install F# Lint
+dotnet tool install -g dotnet-fsharplint
+
+# Install GitVersion
+dotnet tool install -g GitVersion.Tool --version 5.1.3
+
 # Install Paket
 dotnet tool install -g paket
+
+# Install Nuget Package Search
+dotnet tool install -g dotnet-search
+
+# Install .NET Data Encryption Tool
+dotnet tool install -g dotnet-encrypto
+
+# Install .NET SonarScanner
+dotnet tool install -g dotnet-sonarscanner
+
+# Install .NET ssh deployment tool
+dotnet tool install -g dotnet-sshdeploy
+
+# Install PowerShell Core
+dotnet tool install -g powershell
+
+# Install Report Generator
+dotnet tool install -g reportgenerator
+
+# Install XUnit CLI
+dotnet tool install -g xunit-cli --add-source https://www.myget.org/F/natemcmaster/api/v3/index.json 
 
 sudo rm ~/*deb*
 
 # Set back to original current directory
 cd "$CURRENT_DIR"
 
-echo -e "${GREEN}.NET Core SDK 2.2 installation complete.${NC}\n"
+echo -e "${GREEN}.NET Core SDK installation complete.${NC}\n"

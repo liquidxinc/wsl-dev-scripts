@@ -59,6 +59,9 @@ echo -e "\n${RED}Running the rest of the installations...${NC}\n"
 # Install Azure core functions tools
 . ubuntu-install-azure-functions-core-tools.sh
 
+# Install eksctl
+. ubuntu-install-eksctl.sh
+
 # Install Flyway
 . ubuntu-install-flyway.sh
 

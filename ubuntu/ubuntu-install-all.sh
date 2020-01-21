@@ -41,14 +41,14 @@ echo -e "\n${RED}Running the rest of the installations...${NC}\n"
 # Install utilities
 . ubuntu-install-utils.sh
 
-# Install awsli
-. ubuntu-install-awscli.sh
+# Install Azure CLI
+. ubuntu-install-azure-cli.sh
 
 # Install AWS IAM Authenticator
 . ubuntu-install-aws-iam-authenticator.sh
 
-# Install 
-
+# Install AWS Shell
+. ubuntu-install-aws-shell.sh
 
 # Install Docker
 . ubuntu-install-docker.sh
@@ -73,6 +73,10 @@ echo -e "\n${RED}Running the rest of the installations...${NC}\n"
 
 # Install Go
 . ubuntu-install-go.sh
+
+# Install Gruntwork Installer
+# Install after Go only
+. ubuntu-install-gruntwork-installer.sh
 
 # Install Dive - Must be installed after Go
 . ubuntu-install-dive.sh
@@ -113,6 +117,10 @@ sudo pwsh -File ubuntu-install-powershell-modules.sh
 # Install Anchore CLI
 # Must be installed after Python prep
 . ubuntu-install-anchore-cli.sh
+
+# Install awsli
+# Must be installed after Python prep
+. ubuntu-install-awscli.sh
 
 # Install Ruby and related tools
 . ubuntu-install-ruby.sh

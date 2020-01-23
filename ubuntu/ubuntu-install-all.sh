@@ -125,6 +125,12 @@ sudo pwsh -File ubuntu-install-powershell-modules.sh
 # Install Ruby and related tools
 . ubuntu-install-ruby.sh
 
+# Install Hashicorp Consul
+. ubuntu-install-consult.sh
+
+# Install Hashicorp Vault
+. ubuntu-install-vault.sh
+
 # Run update and upgrade again to wrap up
 . ubuntu-update-and-upgrade.sh
 

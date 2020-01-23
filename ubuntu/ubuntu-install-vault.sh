@@ -30,6 +30,22 @@ cd ~
 
 sudo rm -rf ~/*.zip*
 
+
+# Get Docker host port included in bashrc if not in there yet
+SEARCHLINE="export VAULT_ADDR='http://127.0.0.1:8200'"
+
+LINE0="export VAULT_ADDR='http://127.0.0.1:8200'"
+
+#This works!  Leave as reference
+#export PROMPT_COMMAND='__git_ps1 "\e[93m\u@\h: \e[94m\w\e[m" " $ "'
+
+WRITEFILE="\n$LINE0\n"
+
+if ! grep -qF "$SEARCHLINE" ~/.bashrc
+then
+  echo -e "$WRITEFILE" >> ~/.bashrc
+fi
+
 # Set back to original current directory
 cd "$CURRENT_DIR"
 

@@ -81,6 +81,9 @@ echo -e "\n${RED}Running the rest of the installations...${NC}\n"
 # Install Dive - Must be installed after Go
 . ubuntu-install-dive.sh
 
+# Install Kompose
+. ubuntu-install-kompose.sh
+
 # Install Kubectl, Helm, and Draft
 . ubuntu-install-kubectl.sh
 
@@ -117,6 +120,10 @@ sudo pwsh -File ubuntu-install-powershell-modules.sh
 # Install Anchore CLI
 # Must be installed after Python prep
 . ubuntu-install-anchore-cli.sh
+
+# Install Docker Compose
+# Must be installed after Python prep
+. ubuntu-install-docker-compose.sh
 
 # Install awsli
 # Must be installed after Python prep

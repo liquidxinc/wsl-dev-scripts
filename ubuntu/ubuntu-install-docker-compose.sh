@@ -1,5 +1,7 @@
 #! /usr/bin/env bash
 
+# Docker Compose installation.  Run after Python installation!
+
 # For colors, see https://stackoverflow.com/questions/5947742/how-to-change-the-output-color-of-echo-in-linux
 RED='\033[0;31m'
 YELLOW='\033[1;33m'
@@ -14,7 +16,7 @@ CURRENT_DIR=$(pwd)
 
 cd ~
 
-sudo apt-get install docker-compose -y
+pip install --user docker-compose
 
 # Set back to original current directory
 cd "$CURRENT_DIR"

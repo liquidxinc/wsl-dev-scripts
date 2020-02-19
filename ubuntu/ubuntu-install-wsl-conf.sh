@@ -20,7 +20,7 @@ sudo rm -rf /etc/wsl.conf
 LINE0="# Enable extra metadata options by default"
 LINE1="[automount]"
 LINE2="enabled = true"
-LINE3="root = /"
+LINE3='"root = "/mnt/"'
 LINE4='options = "metadata,umask=22,fmask=11"'
 LINE5="mountFsTab = false"
 LINE6=""

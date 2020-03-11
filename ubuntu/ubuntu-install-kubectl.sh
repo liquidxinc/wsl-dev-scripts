@@ -24,6 +24,14 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 
 kubectl config use-context docker-for-desktop
 
+# Install k9s
+mkdir k9s
+curl -Ls https://github.com/derailed/k9s/releases/latest/download/k9s_Linux_x86_64.tar.gz --output k9s/k9s.tar.gz
+tar -xzvf ./k9s/k9s.tar.gz -C ./k9s
+chmod 751 ./k9s/k9s
+sudo mv ./k9s/k9s /usr/local/bin/k9s
+rm -rf k9s
+
 # Install Helm
 curl -LO https://git.io/get_helm.sh
 chmod 700 get_helm.sh

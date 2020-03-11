@@ -7,7 +7,7 @@ GREEN='\033[0;32m'
 GRAY='\033[1;30m'
 NC='\033[0m' # No Color
 
-echo -e "\n${RED}Running installation of Kubectl...${NC}\n"
+echo -e "\n${RED}Running installation of Kubernetes...${NC}\n"
 
 # Save current directory
 CURRENT_DIR=$(pwd)
@@ -64,4 +64,4 @@ rm *.*
 # Set back to original current directory
 cd "$CURRENT_DIR"
 
-echo -e "\n${GREEN}Kubectl installation complete.${NC}\n"
+echo -e "\n${GREEN}Kubernetes installation complete.${NC}\n"

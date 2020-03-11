@@ -90,7 +90,7 @@ More detailed instructions on how to install Ubuntu 18.04 from the Microsoft Sto
 Go to whichever directory you use to keep git repos on your laptop.  Please clone the WSL-DEV-SCRIPTS git repository:
 
 ```bash
-$ git clone https://github.com/TMAtwood/wsl-dev-scripts.git
+$ git clone https://github.com/amacharla/wsl-dev-scripts.git
 ```
 
 Start WSL from the PowerShell or Windows command-line:

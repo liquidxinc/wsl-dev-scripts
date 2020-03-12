@@ -90,7 +90,7 @@ More detailed instructions on how to install Ubuntu 18.04 from the Microsoft Sto
 Go to whichever directory you use to keep git repos on your laptop.  Please clone the WSL-DEV-SCRIPTS git repository:
 
 ```bash
-$ git clone https://github.com/amacharla/wsl-dev-scripts.git
+$ git clone https://github.com/liquidxinc/wsl-dev-scripts.git
 ```
 
 Start WSL from the PowerShell or Windows command-line:
@@ -99,7 +99,10 @@ Start WSL from the PowerShell or Windows command-line:
 PS> ubuntu1804
 ```
 
-Once at the Ubuntu 18.04 command-line, run the  ***ubuntu-install-all.sh*** script to install all dependencies for WSL.  Please note that the script takes approximately 45 minutes to complete.
+Once at the Ubuntu 18.04 command-line run the ***ubuntu-install-all.sh*** script to install all dependencies for WSL.  Please note that the script takes approximately **45 minutes** to complete.
+```
+./ubuntu/ubuntu-install-all.sh
+```
 
 ## License
 

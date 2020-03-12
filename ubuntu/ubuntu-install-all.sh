@@ -138,6 +138,9 @@ sudo pwsh -File ubuntu-install-powershell-modules.sh
 # Install Hashicorp Vault
 . ubuntu-install-vault.sh
 
+# Install LiquidX Tools
+. ubuntu-install-lqx.sh
+
 # Run update and upgrade again to wrap up
 . ubuntu-update-and-upgrade.sh
 

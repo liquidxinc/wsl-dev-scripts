@@ -32,9 +32,9 @@ sudo rm -rf ~/*.zip*
 
 
 # Get Docker host port included in bashrc if not in there yet
-SEARCHLINE="export VAULT_ADDR='http://127.0.0.1:8200'"
+SEARCHLINE="export VAULT_ADDR='https://vault.dlt-jx.inblock.com:8200'"
 
-LINE0="export VAULT_ADDR='http://127.0.0.1:8200'"
+LINE0="export VAULT_ADDR='https://vault.dlt-jx.inblock.com:8200'"
 
 #This works!  Leave as reference
 #export PROMPT_COMMAND='__git_ps1 "\e[93m\u@\h: \e[94m\w\e[m" " $ "'

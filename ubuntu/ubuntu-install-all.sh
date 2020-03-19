@@ -163,3 +163,5 @@ dotnet tool install --global GitVersion.Tool --version 5.1.2-beta1.2
 stopsudo
 
 echo -e "${GREEN}Completed all installations.${NC}\n"
+
+echo -e "${RED}To DO \n${YELLOW} - git clone https://github.com/liquidxinc/tunnels \n - Ask #bosops channel on slack for AWS & Vault access${NC}\n"

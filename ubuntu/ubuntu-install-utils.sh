@@ -21,6 +21,7 @@ sudo apt-get install curl -y
 sudo apt-get install entr -y
 sudo apt-get install file -y
 sudo apt-get install git -y
+sudo apt-get install jq -y
 sudo apt-get install libcups2 -y
 sudo apt-get install openssl -y
 sudo apt-get install unzip -y
